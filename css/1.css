@@ -1,0 +1,60 @@
+.navbar-brand img{
+    width:40px ;
+    height:40px ;
+}
+
+#surfer {
+    width: 100%;
+    height: auto;
+}
+.stranka_pozadie {
+    background-color:#87CEFA;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nadpis1 {
+    color: white;
+    margin-top: 40px;
+}
+.text {
+    color: grey;
+    text-indent: 40px;
+    text-align: justify;
+    margin-top: 50px;
+}
+.nadpis2 {
+    color: green;
+    margin-top: 40px;
+}
+.nadpis3 {
+    color: blue;
+    margin-top: 40px;
+}
+.nadpis5{
+    color: blue;
+    margin-top: 40px;
+
+}
+.nadpis6 {
+    color: blue;
+    margin-top: 40px;
+}
+.formular {
+    margin-top: 50px;
+}
+.formular .container {
+    background-color: #1E90FF;
+    padding: 25px;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0 27px 0;
+    display: inline-block;
+    border: 20px;
+    background: #f1f1f1;
+}
+
+
+
