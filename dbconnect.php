@@ -31,7 +31,7 @@ class dbConnection {
                 return false;
             }
 
-            if (!preg_match("/[a-zA-Z\s]/i", $meno)) {
+            if (!preg_match("/^[a-zA-Z]{1,254}$/i", $meno_trim) == TRUE) {
                 return false;
             }
         }
@@ -42,7 +42,7 @@ class dbConnection {
                 return false;
             }
 
-            if (!preg_match("/[a-zA-Z\s]/i", $priezvisko)) {
+            if (!preg_match("/^[a-zA-Z]{1,254}$/i", $priezvisko)) {
                 return false;
             }
         }
@@ -53,7 +53,7 @@ class dbConnection {
                 return false;
             }
 
-            if (!preg_match("/[a-zA-Z\s]/i", $pohlavie)) {
+            if (!preg_match("/^[a-zA-Z]{1,254}$/i", $pohlavie)) {
                 return false;
             }
         }
@@ -63,7 +63,7 @@ class dbConnection {
             if($kurz_trim == '') {
                 return false;
             }
-            if (!preg_match("/[a-zA-Z\s-]/i", $kurz)) {
+            if (!preg_match("/^[a-zA-Z\s]{1,254}$/i", $kurz)) {
                 return false;
             }
         }
@@ -134,7 +134,7 @@ class dbConnection {
 
         if ($result) {
             if ($result->num_rows === 0) {
-                return false;
+               return false;
             }
         } else {
             return false;
